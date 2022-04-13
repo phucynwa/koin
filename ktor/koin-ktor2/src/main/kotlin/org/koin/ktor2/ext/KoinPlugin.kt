@@ -28,7 +28,7 @@ import org.koin.core.context.stopKoin
  *
  */
 
-object KoinPlugin : ApplicationPlugin<Application, KoinApplication, Unit> {
+object KoinPlugin : BaseApplicationPlugin<Application, KoinApplication, Unit> {
 
     override val key: AttributeKey<Unit>
         get() = AttributeKey("Koin")
